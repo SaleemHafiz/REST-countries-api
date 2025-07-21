@@ -1,7 +1,7 @@
 import React from 'react'
 import CountryCard from './CountryCard'
 
-export default function CountryCardsShimer() {
+export default function CountryCardsShimmer() {
     const shimerWord = '&#9608;&#9608;&#9608;&#9608;'
     const emptyCards = [
         <CountryCard flag={null} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={1} cca3={shimerWord} />,

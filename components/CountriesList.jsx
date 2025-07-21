@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import CountryCard from "./CountryCard";
-import CountryCardsShimer from "./CountryCardsShimer";
+import CountryCardsShimmer from "./CountryCardsShimmer";
 // import flag from "../assets/images/flagPak.svg";
-const flag = new URL("../assets/images/flagPak.svg", import.meta.url).href;
+const flag = new URL("../assets/images/transparent.jpg", import.meta.url).href;
 
 export default function CountriesList({searchQuery, filteredRegion}) {
   const [countries, setCountries] = useState(null)
@@ -18,19 +18,18 @@ export default function CountriesList({searchQuery, filteredRegion}) {
         });
     }, []);
 
-  const shimerWord = '░░░░░░'
+  const shimmerWord = '░░░░░░'
       const emptyCards = [
-        <CountryCard flag={flag} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={0} cca3={shimerWord} />,
-        <CountryCard flag={flag} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={1} cca3={shimerWord} />,
-        <CountryCard flag={flag} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={2} cca3={shimerWord} />,
-        <CountryCard flag={flag} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={3} cca3={shimerWord} />,
-        <CountryCard flag={flag} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={4} cca3={shimerWord} />,
-        <CountryCard flag={flag} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={5} cca3={shimerWord} />,
-        <CountryCard flag={flag} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={6} cca3={shimerWord} />,
-        <CountryCard flag={flag} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={7} cca3={shimerWord} />,
-        <CountryCard flag={flag} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={8} cca3={shimerWord} />,
-        <CountryCard flag={flag} name={shimerWord} population={shimerWord} region={shimerWord} capital={shimerWord} key={9} cca3={shimerWord} />
-        
+        <CountryCard className="shimmer-card" flag={flag} name={shimmerWord} population={shimmerWord} region={shimmerWord} capital={shimmerWord} key={0} cca3={shimmerWord} />,
+        <CountryCard className="shimmer-card" flag={flag} name={shimmerWord} population={shimmerWord} region={shimmerWord} capital={shimmerWord} key={1} cca3={shimmerWord} />,
+        <CountryCard className="shimmer-card" flag={flag} name={shimmerWord} population={shimmerWord} region={shimmerWord} capital={shimmerWord} key={2} cca3={shimmerWord} />,
+        <CountryCard className="shimmer-card" flag={flag} name={shimmerWord} population={shimmerWord} region={shimmerWord} capital={shimmerWord} key={3} cca3={shimmerWord} />,
+        <CountryCard className="shimmer-card" flag={flag} name={shimmerWord} population={shimmerWord} region={shimmerWord} capital={shimmerWord} key={4} cca3={shimmerWord} />,
+        <CountryCard className="shimmer-card" flag={flag} name={shimmerWord} population={shimmerWord} region={shimmerWord} capital={shimmerWord} key={5} cca3={shimmerWord} />,
+        <CountryCard className="shimmer-card" flag={flag} name={shimmerWord} population={shimmerWord} region={shimmerWord} capital={shimmerWord} key={6} cca3={shimmerWord} />,
+        <CountryCard className="shimmer-card" flag={flag} name={shimmerWord} population={shimmerWord} region={shimmerWord} capital={shimmerWord} key={7} cca3={shimmerWord} />,
+        <CountryCard className="shimmer-card" flag={flag} name={shimmerWord} population={shimmerWord} region={shimmerWord} capital={shimmerWord} key={8} cca3={shimmerWord} />,
+        <CountryCard className="shimmer-card" flag={flag} name={shimmerWord} population={shimmerWord} region={shimmerWord} capital={shimmerWord} key={9} cca3={shimmerWord} />
       ]
 
   const allCountries = 
