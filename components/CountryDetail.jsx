@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import './CountryDetail.css'
 import { Link, useParams } from 'react-router-dom'
+import transparentImage from '../assets/images/transparent.jpg'
 
 export default function CountryDetail() {
 
@@ -56,7 +57,50 @@ export default function CountryDetail() {
   }
 
   return countryData === null ? (
-    'loading...'
+    <main>
+      <div className="country-details-container">
+        <span className="back-button" onClick={() => history.back()}>
+          <i className="fa-solid fa-arrow-left"></i>&nbsp; Back
+        </span>
+        <div className="country-details shimmer">
+          <img src={transparentImage} alt={`flag`} />
+          <div className="details-text-container">
+            <h1>&#x2588;&#x2588;&#x2588;&#x2588;</h1>
+            <div className="details-text">
+              <p>
+                <b>Native Name: &#x2588;&#x2588;&#x2588;&#x2588;</b>
+                <span className="native-name"></span>
+              </p>
+              <p>
+                <b>
+                  Population: &#x2588;&#x2588;&#x2588;&#x2588;
+                </b>
+                <span className="population"></span>
+              </p>
+              <p>
+                <b>Region: &#x2588;&#x2588;&#x2588;&#x2588;</b>
+                <span className="region"></span>
+              </p>
+              <p>
+                <b>Sub Region: &#x2588;&#x2588;&#x2588;&#x2588;</b>
+              </p>
+              <p>
+                <b>Capital: &#x2588;&#x2588;&#x2588;&#x2588;</b>
+              </p>
+              <p>
+                <b>Top Level Domain: &#x2588;&#x2588;&#x2588;&#x2588;</b>
+              </p>
+              <p>
+                <b>Currencies: &#x2588;&#x2588;&#x2588;&#x2588;</b>
+              </p>
+              <p>
+                <b>Languages: &#x2588;&#x2588;&#x2588;&#x2588;</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   ) : (
     <main>
       <div className="country-details-container">

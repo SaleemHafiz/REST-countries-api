@@ -3,21 +3,26 @@
 }
 
 body {
-    --background-color: white;
-    --text-color: black;
-    --elements-color: white;
-    --shimmer-image: hsl(0, 0%, 85%);
     margin: 0;
     font-family: Nunito, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
 }
 
-body.dark {
+.dark {
     --background-color: hsl(207, 26%, 17%); 
     --text-color: white;
     --elements-color: hsl(209, 23%, 22%);
     --shimmer-image: hsl(0, 0%, 51%);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.light {
+    --background-color: white;
+    --text-color: black;
+    --elements-color: white;
+    --shimmer-image: hsl(0, 0%, 85%);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 main {
@@ -90,6 +95,16 @@ a {
 .shimmer-card a img {
     opacity: 0;
     background-color: #999;
+}
+
+.shimmer {
+    color: var(--elements-color);
+}
+.shimmer img {
+    background-color: var(--elements-color);
+    width: 400px;
+    height: 200px;
+    border: var(--elements-color) 1px solid;
 }
 
 .country-card:hover {

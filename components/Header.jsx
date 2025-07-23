@@ -1,18 +1,6 @@
-export default function Header() {
-  
-const isDark = localStorage.getItem("isDark") === "true";
+export default function Header({applyDarkMode}) {
 
-if(isDark){
-  document.body.classList.add('dark');
-}
-
-
-function applyDarkMode() {
-  const isDark = document.body.classList.toggle('dark');
-  console.log(isDark);
-  localStorage.setItem("isDark", isDark);
-  
-}
+  console.log(applyDarkMode);
 
   return (
     <header className="header-container">

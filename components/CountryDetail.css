@@ -36,6 +36,16 @@
     flex-wrap: wrap;
 }
 
+.shimmer {
+    color: var(--elements-color);
+}
+.shimmer img {
+    background-color: var(--elements-color);
+    width: 400px;
+    height: 200px;
+    border: var(--elements-color) 1px solid;
+}
+
 .details-text p {
     margin: 0;
 }
